@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
+#scshinsta a {
+	color: #517FA4;
+}
+
+#scshinsta a.il-load-more {
+	background: #517FA4;
+	display: inline-block;
+	margin: 0 0 40px 0;
+	padding: 20px;
+	font-size: 16px;
+	line-height: 14px;
+	text-decoration: none;
+	border-radius: 6px;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #fff;
+}
+
+#scshinsta a.il-load-more:hover {
+	background: #125688;
+}
+.il-foodnetwork-load-more.il-load-more a {
+	font-family: tahoma;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#scshinsta ul {
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+#scshinsta ul li {
+	border: 1px #ccc solid;
+	list-style: none;
+	margin: 0 0 40px 0;
+	padding: 0;
+	float: left;
+	width: 100%;
+}
+
+#scshinsta ul li img,
+#scshinsta ul li video {
+	border-bottom: 1px #ccc solid;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#scshinsta .il-photo__meta {
+	background: #eee;
+	padding: 20px;
+	padding-bottom: 30px;
+}
+
+#scshinsta .il-photo__caption {
+	margin: 0 0 20px 0;
+}
+
+#scshinsta .il-photo__likes:before {
+	content: "Likes: ";
+}
+
+#scshinsta .il-photo__comments:before {
+	content: "Comments: ";
+}
+
+@media screen and (min-width: 600px) {
+	
+	#scshinsta ul li {
+		margin: 0 40px 40px 0;
+		width: calc(50% - 20px);
+	}
+	
+	#scshinsta ul li:nth-child(2n+2) {
+		margin-right: 0;
+	}
+	
+	#scshinsta .il-photo__caption {
+		height: 120px;
+		overflow: hidden;
+		font-family: tahoma !important;
+		direction: rtl;
+		text-align: justify;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	
+	#scshinsta ul li {
+		margin: 0 40px 40px 0;
+		width: calc(25% - 30px);
+	}
+	
+	#scshinsta ul li:nth-child(2n+2) {
+		margin-right: 40px;
+	}
+	
+	#scshinsta ul li:nth-child(4n+4) {
+		margin-right: 0;
+	}
+}
+.il-photo__likes {
+	float: right;
+}
+.il-photo__comments {
+	float: left;
+}
+#scshinsta .il-photo__likes:before {
+    content: "دوست داشتن: ";
+}
+#scshinsta .il-photo__comments:before {
+    content: "نظرات: ";
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>scshinsta</name>
+    <author>https://trangell.com shahryar tavakkoli</author>
+    <version>1.0.0</version>
+    <description>
+	
+	
+	 <![CDATA[
+<div align="center">
+            <div class="alert alert-success" style="background-color:#edf4ff;border-color:#a0c7ff;color: #0088CC;padding: 10px; font-family:tahoma; font-size:12px; font-weight:normal;">
+            <h4>
+            <a href="https://github.com/shahryarjb" style="font-family:tahoma; font-size:15px; font-weight:normal;">گیت هاب ترانگل</a> | 
+            <a href="https://trangell.com" style="font-family:tahoma; font-size:15px; font-weight:normal;">وب سایت ترانگل</a> | 
+            <a href="https://trangell.com/blog/2-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%DA%AF%D8%B1%D9%88%D9%87-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AA%D8%B1%D8%A7%D9%86%DA%AF%D9%84" style="font-family:tahoma; font-size:15px; font-weight:normal;">درباره ما </a> |
+            <a href="https://trangell.com/blog/6-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%81%D8%B2%D9%88%D9%86%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C" style="font-family:tahoma; font-size:15px; font-weight:normal;">خدمات افزونه نویسی </a>        <br>
+            </h4>
+            <div>
+            <br/>
+            <br/>
+            <br/>
+            <span style="color:#2C8C42;font-size:20px">ماژول نمایش آخرین پست های اینستاگرام در جوملا</span>            <br/>
+            <br/>
+            <br/>
+            <img style="width:336px;height:280px;margin-left:auto;margin-right:auto;" src="https://trangell.com/images/header-blogo.png">
+            </div>
+            <style>table.adminform{width: 100%;}</style>
+            </div>
+]]>
+	
+	
+	</description>
+    <files>
+        <filename>mod_scshinsta.xml</filename>
+        <filename module="mod_scshinsta">mod_scshinsta.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/css/style.css</filename>
+        <filename>tmpl/js/instagramLite.js</filename>
+        <filename>tmpl/js/jquery.min.js</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+
+<fields name="params">
+ <fieldset name="basic">
+
+
+                <field name="username" type="text" default="trangell" label="USERNAME" description="LOCATION_DESC" />
+                <field name="clientid" type="text" default="199554eb34504658a4770d2859b5a583" label="CLIENTID" description="" />
+
+                <field name="counterinsta" type="text" default="12" label="CONTER" description="" />
+
+                <field name="video" type="radio" default="false" label="VIDEO" description="VIDEO">
+                      <option value="true">فعال</option>
+                      <option value="false">غیر فعال</option>
+               </field>
+
+               <field name="like" type="radio" default="false" label="LIKE" description="VIDEO">
+                      <option value="true">فعال</option>
+                      <option value="false">غیر فعال</option>
+               </field>
+
+               comments
+
+               <field name="comments" type="radio" default="true" label="COMMENTS" description="VIDEO">
+                      <option value="true">فعال</option>
+                      <option value="false">غیر فعال</option>
+               </field>
+
+               <field name="captions" type="radio" default="true" label="CAPTIONS" description="VIDEO">
+                      <option value="true">فعال</option>
+                      <option value="false">غیر فعال</option>
+               </field>
+
+                <field name="urls" type="radio" default="true" label="URLS" description="VIDEO">
+                      <option value="true">فعال</option>
+                      <option value="false">غیر فعال</option>
+               </field>
+
+ </fieldset>
+</fields>
+
+
+    </config>
+</extension>
